@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./CSS/style.css">
+    <link rel="stylesheet" href="./CSS/media.css">
+    <link rel="icon" href="./SRC/imgs/logo para icone.png">
+    <title>Bolo Aqui</title>
+</head>
+
+<body>
+    <header>
+
+        <figure>
+            <img class="logo" src="./SRC/imgs/Novo_Projeto__8_-removebg-preview-removebg-preview.png"
+                alt="Logo_Bolo_Aqui">
+        </figure>
+
+        <div class="links_header">
+            <a href="#">Quem somos</a>
+
+            <a href="#">Nossos contatos</a>
+        </div>
+
+    </header>
+    <figure class="figuras_home">
+        <img class="img_fundo_chocolate"
+            src="./SRC/imgs/a-photo-of-a-chocolate-background-with-various-cho-igQFiWLYRPy2ERA7GHe9-A-5ReZsqmlT_e-dk5oS-0OuQ.jpeg"
+            alt="fundo de chocolate">
+        <img class="onda_chocolate_1" src="./SRC/imgs/fundo onda.png" alt="onda de chocolate">
+    </figure>
+    
+    <main>
+        <h1>Compre já o seu!</h1>
+        <div class="conteiner_principal_e_carrinho">
+            <section id="principal" class="sessao_principal">
+                <figure>
+                    <img class="img_bolo_comprar"
+                        src="./SRC/imgs/bolo-de-cenoura-z-6_2su5RBe4p6VJOPo-1g-rSKU2gi3QqmK1MDcB1shFQ.jpeg"
+                        alt="bolo_cenoura">
+                </figure>
+
+                <div class="informacao_sessao_principal">
+                    <h2>Bolo de cenoura</h2>
+
+                    <p>O bolo de cenoura é um clássico irresistível que agrada a todos os paladares. Com sua massa
+                        fofinha e
+                        ligeiramente úmida, o sabor delicado da cenoura é perfeitamente balanceado por uma cobertura
+                        generosa de chocolate, criando uma combinação dos sonhos. Seja para o café da tarde ou uma
+                        sobremesa
+                        especial, este bolo é sempre uma escolha certeira para quem busca conforto e sabor.</p>
+
+                    <p id="mudar_preco" class="preco">
+                        R$ 200,00
+                    </p>
+
+
+                    <p>Quantidade: </p>
+
+                    <div class="conteiner_quantidade">
+                        <div class="div_comprar">
+                            <button onclick="menos()">-</button>
+                            <p id="quantidade">1</p>
+                            <button onclick="mais()">+</button>
+
+                        </div>
+                        <figure>
+                            <button onclick="botao_carrinho()" class="botao_carrinho"> <img
+                                    src="./SRC/imgs/shopping_cart_checkout_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.png"
+                                    alt="adicionar_carrinho"></button>
+                        </figure>
+                    </div>
+                    <button>Comprar</button>
+
+
+                </div>
+            </section>
+
+            <section id="adicionar_carrinho">
+                <button id="excluir_carrinho">X</button>
+                <h3>Adicionar no carrinho</h3>
+                <p class="total_no_carrinho">Total: R$ 0,00</p>
+
+
+                <div id="carrinho_itens">
+
+                </div>
+                <div class="conteiner_comprar_delete_carrinho">
+                    <button>Comprar</button>
+                    <button id="delete_carrinho">Delete</button>
+                </div>
+            </section>
+            
+        </div>
+
+        <hr>
+
+        <h2>Veja outros sabores!</h2>
+
+        <div class="conteiner_sessao">
+
+            <section class="sessao_secundaria">
+
+                <h3>Bolo de cenoura</h3>
+
+                <figure>
+                    <img src="./SRC/imgs/bolo-de-cenoura-z-6_2su5RBe4p6VJOPo-1g-rSKU2gi3QqmK1MDcB1shFQ.jpeg"
+                        alt="bolo_cenoura">
+                </figure>
+
+                <div class="div_texto_secundario">
+                    <p>O bolo de cenoura é um clássico irresistível que agrada a todos os paladares. Com sua massa
+                        fofinha e ligeiramente úmida, o sabor delicado da cenoura é perfeitamente balanceado por uma
+                        cobertura generosa de chocolate, criando uma combinação dos sonhos. Seja para o café da tarde ou
+                        uma sobremesa especial, este bolo é sempre uma escolha certeira para quem busca conforto e
+                        sabor.</p>
+                </div>
+                <p class="preco">R$ 200,00</p>
+
+                <button>Veja</button>
+
+            </section>
+
+            <section class="sessao_secundaria">
+
+                <h3>Bolo de chocolate</h3>
+
+                <figure>
+                    <img src="./SRC/imgs/bolo-de-chocolate-gk6ewy5GQYyr5CA6Gg9uqw-wSF8QDQOSUib2qRlE1GzPA.jpeg"
+                        alt="bolo_chocolate">
+                </figure>
+
+                <div class="div_texto_secundario">
+                    <p>O bolo de chocolate é uma explosão de sabor que encanta a todos. Feito com os melhores
+                        ingredientes, ele possui uma textura macia e um sabor intenso de chocolate que derrete na boca.
+                        Ideal para qualquer ocasião, desde um lanche até uma festa, este bolo é sinônimo de alegria e
+                        satisfação. Não há como resistir ao seu aroma inconfundível e ao prazer que cada fatia
+                        proporciona.</p>
+                </div>
+                <p class="preco">R$ 230,00</p>
+
+                <button>Veja</button>
+
+            </section>
+
+            <section class="sessao_secundaria">
+
+                <h3>Bolo de limão</h3>
+
+                <figure>
+                    <img src="./SRC/imgs/bolo-de-limao-D0XFzXqRTLiyCKM91N3uuw-9TlQKS0BSbCIGhZ2Wyk-pw.jpeg"
+                        alt="bolo_limão">
+                </figure>
+                <div class="div_texto_secundario">
+                    <p>Refrescante e cheio de vida, o bolo de limão é perfeito para quem adora um toque cítrico. Sua
+                        massa leve e macia é complementada por uma cobertura que equilibra a doçura do açúcar com a
+                        acidez vibrante do limão, resultando em uma sobremesa deliciosa e revigorante. Ideal para os
+                        dias quentes ou para quem quer um sabor diferente, o bolo de limão é uma opção surpreendente e
+                        saborosa.</p>
+                </div>
+                <p class="preco">R$ 280,00</p>
+
+                <button>Veja</button>
+
+            </section>
+
+            <section class="sessao_secundaria">
+
+                <h3>Bolo de morango</h3>
+
+                <figure>
+                    <img src="./SRC/imgs/bolo-de-morango-DVPGfDRdRti6dpjl2YkzOQ-F5Txg1EmTV-ppYM2pZrUrQ.jpeg"
+                        alt="bolo_morango">
+                </figure>
+                <div class="div_texto_secundario">
+                    <p>O bolo de morango é a combinação perfeita de doçura e frescor. Feito com morangos frescos e
+                        suculentos, sua massa é leve e fofa, criando uma base ideal para o sabor delicado da fruta. A
+                        cobertura de chantilly ou creme de morangos realça ainda mais essa delícia, tornando este bolo
+                        uma escolha perfeita para quem busca um doce suave e frutado. É uma sobremesa que traz cor e
+                        sabor para qualquer ocasião.</p>
+                </div>
+                <p class="preco">R$ 380,00</p>
+
+                <button>Veja</button>
+
+            </section>
+
+            <section class="sessao_secundaria">
+
+                <h3>Bolo de amendoas</h3>
+
+                <figure>
+                    <img src="./SRC/imgs/a-photo-of-a-bolo-de-amendoas-a-portuguese-almond--t8CoLLt5R-qx2PWP9SOuPw-vJvmK5LjQXmbwcXlQ8JPkA.jpeg"
+                        alt="bolo_amendoas">
+                </figure>
+
+                <div class="div_texto_secundario">
+                    <p>Um bolo macio e delicado, feito com farinha de amêndoas que confere uma textura suave e um sabor
+                        levemente adocicado e aromático. Ideal para acompanhar um chá da tarde, ele pode ser servido
+                        simples ou com uma cobertura de açúcar de confeiteiro e amêndoas laminadas, proporcionando uma
+                        experiência saborosa e refinada.</p>
+                </div>
+                <p class="preco">R$ 330,00</p>
+
+                <button>Veja</button>
+
+            </section>
+
+            <section class="sessao_secundaria">
+
+                <h3>Bolo de carne</h3>
+
+                <figure>
+                    <img src="./SRC/imgs/a-medium-shot-of-a-bolo-de-carne-a-brazilian-meatl-CbMB0ELdSvCVkUjFAxqS7Q-UHkz3O-HQ6upXaL9LV3VcQ.jpeg"
+                        alt="bolo_carne">
+                </figure>
+
+                <div class="div_texto_secundario">
+                    <p>Uma versão salgada do tradicional bolo, feito com carne moída bem temperada e recheado com
+                        ingredientes como queijo, vegetais ou ovos. Este bolo é perfeito como prato principal, servido
+                        quente acompanhado de uma salada fresca ou vegetais assados. Sua crosta dourada e interior
+                        suculento tornam este bolo uma refeição reconfortante e cheia de sabor.</p>
+                </div>
+                <p class="preco">R$ 400,00</p>
+
+                <button>Veja</button>
+
+            </section>
+
+            <section class="sessao_secundaria">
+
+                <h3>Bolo de brócolis</h3>
+
+                <figure>
+                    <img src="./SRC/imgs/a-photo-of-a-bolo-de-brocolis-a-portuguese-broccol-c8OB2w1XTCCLBZuhn4898Q-WBlquSvETw-AFrACeU9lZQ.jpeg"
+                        alt="bolo_brócolis">
+                </figure>
+
+                <div class="div_texto_secundario">
+                    <p>Uma opção saudável e saborosa, o bolo de brócolis combina a leveza dos vegetais com uma massa
+                        macia e úmida. Com brócolis picados finamente incorporados à massa, este bolo é uma excelente
+                        escolha para um lanche nutritivo ou uma refeição leve, podendo ser servido com um molho de
+                        iogurte ou acompanhado de uma salada.</p>
+                </div>
+                <p class="preco">R$ 190,00</p>
+
+                <button>Veja</button>
+
+            </section>
+
+            <section class="sessao_secundaria">
+
+                <h3>Bolo vegano</h3>
+
+                <figure>
+                    <img src="./SRC/imgs/a-photo-of-a-vegan-bolo-it-is-a-round-dense-cake-w-fMBgnv9FT4GlANk1orCASA-md3vTn84TgeO8c88oUomzA.jpeg"
+                        alt="bolo_vegano">
+                </figure>
+
+                <div class="div_texto_secundario">
+                    <p>Um bolo 100% livre de ingredientes de origem animal, feito com substitutos naturais que garantem
+                        um sabor delicioso e uma textura perfeita. Pode ser preparado em uma variedade de sabores, como
+                        chocolate, baunilha ou frutas, e é ideal para quem busca uma sobremesa ética e saudável.
+                        Decorado com frutas frescas ou glacê de coco, este bolo é uma escolha saborosa para qualquer
+                        ocasião.</p>
+                </div>
+                <p class="preco">R$ 210,00</p>
+
+                <button>Veja</button>
+
+            </section>
+        </div>
+
+
+    </main>
+
+    <figure class="figuras_home">
+        <img class="onda_chocolate_2" src="./SRC/imgs/fundo onda 2.png" alt="onda de chocolate">
+    </figure>
+
+    <div class="conteiner_footer">
+
+        <footer>
+
+            <figure>
+                <img src="./SRC/imgs/seta_marrom-removebg-preview.png" alt="seta marrom">
+            </figure>
+
+            <h1>Obrigado por visitar!</h1>
+
+            <p>Siga também em nossas redes sociais!</p>
+
+            <figure>
+                <img class="whatsapp" src="./SRC/imgs/whatsapp_4494470.png" alt="whatsapp">
+                <img class="facebook" src="./SRC/imgs/facebook_4494464.png" alt="facebook">
+                <img class="instagram" src="./SRC/imgs/instagram_1384015.png" alt="instagram">
+            </figure>
+
+            <address>Rua João da roxa, Nº 150, Bairro São Francisco, Cidade de Belo Horizonte</address>
+
+        </footer>
+    </div>
+
+    <script src="./JS/control.js"></script>
+</body>
+
+</html>

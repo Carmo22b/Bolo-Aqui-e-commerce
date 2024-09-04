@@ -1,0 +1,1940 @@
+/* Smartphones (600px para baixo) */
+@media only screen and (max-width: 600px) {
+    
+    body{
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+    
+    .links_header{
+        gap: 10px;
+        margin-right: 0px;
+        
+    }
+    
+    .links_header a {
+        width: 70px;
+    }
+    
+    
+    .logo{
+        width: 120px;
+    }
+    
+    main{
+        padding: 20px;
+    }
+    
+    .img_fundo_chocolate{
+        width: 100%;
+        height: 300px;
+        object-fit: cover;
+    }
+    
+    .onda_chocolate_1{
+        width: 100%;
+        height: 300px;
+        object-fit: cover;
+        position: relative;
+        bottom: 290px;
+        
+    }
+    
+    .figuras_home{
+        height: 290px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    h1{
+        font-size: 30px;
+        padding: 20px;
+        text-align: center;
+    }
+    
+    .sessao_principal{
+        display: flex;
+        gap: 20px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .img_bolo_comprar{
+        width: 150px;
+        border: solid 1px rgb(0, 0, 0);
+        border-radius: 20px;
+    }
+    
+    .informacao_sessao_principal{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        width: 300px;
+    }
+    
+    .informacao_sessao_principal h2{
+        font-size: 25px;
+    }
+    
+    .informacao_sessao_principal .preco{
+        font-size: 30px;
+    }
+    
+    .informacao_sessao_principal .conteiner_quantidade{
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+    
+    .informacao_sessao_principal .conteiner_quantidade figure .botao_carrinho{
+    width: 50px;
+    background: rgb(0, 0, 0);
+    
+    }
+    
+    .informacao_sessao_principal .conteiner_quantidade figure img{
+        width: 30px;
+        cursor: pointer;
+        transition: 0.3s ease;
+        margin-top: 4px;
+    }
+    
+    .informacao_sessao_principal .conteiner_quantidade figure .botao_carrinho:hover{
+        background-color: rgb(255, 140, 0);
+        border-radius: 10px;
+        
+    }
+    
+    .conteiner_principal_e_carrinho{
+        display: flex;
+        gap: 20px;
+        flex-direction: column;
+        
+    }
+    
+    #adicionar_carrinho{
+        width: 270px;
+        height: 460px;
+        border: #472e2e solid 1px;
+        border-radius: 20px;
+        background-color: white;
+        padding: 30px;
+        display: none;
+        flex-direction: column;
+        gap: 20px;
+        animation: slideDown 0.5s ease forwards;
+        
+    
+    }
+    
+    @keyframes slideDown {
+        from{
+            transform: translateX(-100%);
+            opacity: 0;
+        }
+        to{
+            transform: translateY(0);
+            opacity: 1;
+        }
+    }
+    
+    #adicionar_carrinho #carrinho_itens{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        background-color: #684d4d;
+        border-radius: 20px;
+        overflow: auto;
+        
+    }
+    
+    #adicionar_carrinho #carrinho_itens .carrinho_item {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding: 10px;
+    }
+    
+    #adicionar_carrinho #excluir_carrinho{
+        width: 50px;
+        font-size: 14px;
+        background-color: rgb(156, 51, 51);
+        color: aliceblue;
+        cursor: pointer;
+        border: none;
+        padding: 5px;
+        border-radius: 10px;
+        transition: all 0.3s ease;
+    }
+    
+    #adicionar_carrinho #excluir_carrinho:hover{
+        color: black;
+        background-color: rgb(255, 140, 0);
+    }
+    
+    #adicionar_carrinho h3{
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+    
+    #adicionar_carrinho img{
+        width: 50px;
+        border-radius: 20px;
+    }
+    
+    #adicionar_carrinho .conteiner_comprar_delete_carrinho{
+        display: flex;
+        gap: 20px;
+        justify-content: center;
+        align-items: end;
+        margin-top: auto;
+        
+    }
+    
+    #adicionar_carrinho .conteiner_comprar_delete_carrinho button{
+        width: 100px;
+        font-size: 14px;
+        background-color: rgb(66, 43, 26);
+        color: aliceblue;
+        cursor: pointer;
+        border: none;
+        padding: 5px;
+        border-radius: 10px;
+        transition: all 0.3s ease;
+        
+    }
+    
+    #adicionar_carrinho .conteiner_comprar_delete_carrinho button:hover{
+        color: black;
+        background-color: rgb(255, 140, 0);
+    }
+    
+    .sessao_principal .informacao_sessao_principal .div_comprar{
+        border: solid 1px black;
+        display: flex;
+        flex-direction: row;
+        width: 100px;
+        padding: 10px;
+        border-radius: 10px;
+        background-color: rgb(116, 80, 54);
+        justify-content: space-between;
+        align-items: center;
+        gap: 9px;
+    }
+    
+    .sessao_principal .informacao_sessao_principal .div_comprar button{
+        width: 80px;
+        background-color: transparent;
+    }
+    
+    .sessao_principal .informacao_sessao_principal button{
+        width: 100px;
+        font-size: 20px;
+        background-color: rgb(66, 43, 26);
+        color: aliceblue;
+        cursor: pointer;
+        border: none;
+        padding: 5px;
+        border-radius: 10px;
+        transition: all 0.3s ease;
+    }
+    
+    .sessao_principal .informacao_sessao_principal button:hover{
+     color: black;
+     background-color: rgb(255, 140, 0);
+    }
+    
+    hr{
+        height: 7px;
+        background-color: rgb(46, 28, 0);
+        border: none;
+        margin: 60px;
+    }
+    
+    h2{
+        font-size: 25px;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    
+    .conteiner_sessao{
+        display: flex;
+        gap: 30px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .conteiner_sessao .sessao_secundaria{
+        border: solid 2px black;
+        border-radius: 20px;
+        padding: 30px;
+        background-color: white;
+        text-align: center;
+        width: 230px;
+        
+    }
+    
+    .sessao_secundaria img{
+        width: 100%;
+        border-radius: 10px;
+        padding: 5px;
+    }
+    
+    .conteiner_sessao .sessao_secundaria .div_texto_secundario {
+        height: 100px;
+        overflow-y: auto;
+        border: 1px solid #472e2e;
+        border-radius: 15px;
+        
+    }
+    
+    .conteiner_sessao .sessao_secundaria p{
+        padding: 10px;
+        
+    }
+    
+    .conteiner_sessao .sessao_secundaria .preco{
+        font-size: 30px;
+    }
+    
+    .conteiner_sessao .sessao_secundaria button{
+        width: 100px;
+        font-size: 20px;
+        background-color: rgb(66, 43, 26);
+        color: aliceblue;
+        cursor: pointer;
+        border: none;
+        padding: 5px;
+        border-radius: 10px;
+        transition: all 0.3s ease;
+    }
+    
+    .conteiner_sessao .sessao_secundaria button:hover{
+        color: black;
+        background-color: rgb(255, 140, 0);   
+    }
+    
+    .onda_chocolate_2{
+        width: 100%;
+        height: 400px;
+        object-fit: cover;
+        position: relative;
+        z-index: 2;
+         
+    }
+    
+    footer{
+        background-color: rgb(177, 142, 98);
+        position: relative;
+        bottom: 200px;
+        padding: 20px;
+        padding-top: 160px;
+        
+    }
+        
+    .conteiner_footer{
+        height: 0px;
+    }
+    
+    footer address{
+        text-align: end;
+    }
+    
+    footer p{
+        font-size: 23px;
+    }
+    
+    footer figure{
+        padding: 20px;
+        display: flex;
+        gap: 20px;
+    }
+    
+    footer figure .whatsapp{
+        width: 50px;
+        border-radius: 50%;
+        cursor: pointer;
+        transition: 0.3s ease;
+    
+    }
+    
+    footer figure .whatsapp:hover{
+        background-color: rgb(0, 255, 64);
+    }
+    
+    footer figure .facebook{
+        width: 50px;
+        border-radius: 50%;
+        cursor: pointer;
+        transition: 0.3s ease;
+    }
+    
+    footer figure .facebook:hover{
+        background-color: rgb(52, 106, 255);
+    }
+    
+    footer figure .instagram{
+        width: 50px;
+        border-radius: 50%;
+        cursor: pointer;
+        transition: 0.3s ease;
+    }
+    
+    footer figure .instagram:hover{
+        background-color: #ff7b00;
+    }
+    
+
+    
+}
+
+/* Dispositivos Pequenos (601px a 819px) */
+@media only screen and (min-width: 601px) and (max-width: 819px) {
+    
+    body{
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+    
+    .links_header{
+        gap: 20px;
+        margin-right: 50px;
+        
+    }
+    
+    
+    .logo{
+        width: 220px;
+    }
+    
+    main{
+        padding: 20px;
+    }
+    
+    .img_fundo_chocolate{
+        width: 100%;
+        height: 300px;
+        object-fit: cover;
+    }
+    
+    .onda_chocolate_1{
+        width: 100%;
+        height: 300px;
+        object-fit: cover;
+        position: relative;
+        bottom: 290px;
+        
+    }
+    
+    .figuras_home{
+        height: 290px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    h1{
+        font-size: 50px;
+        padding: 20px;
+        text-align: center;
+    }
+    
+    .sessao_principal{
+        display: flex;
+        gap: 20px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .img_bolo_comprar{
+        width: 270px;
+        border: solid 1px rgb(0, 0, 0);
+        border-radius: 20px;
+    }
+    
+    .informacao_sessao_principal{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        width: 300px;
+    }
+    
+    .informacao_sessao_principal h2{
+        font-size: 32px;
+    }
+    
+    .informacao_sessao_principal .preco{
+        font-size: 30px;
+    }
+    
+    .informacao_sessao_principal .conteiner_quantidade{
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+    
+    .informacao_sessao_principal .conteiner_quantidade figure .botao_carrinho{
+    width: 50px;
+    background: rgb(0, 0, 0);
+    
+    }
+    
+    .informacao_sessao_principal .conteiner_quantidade figure img{
+        width: 30px;
+        cursor: pointer;
+        transition: 0.3s ease;
+        margin-top: 4px;
+    }
+    
+    .informacao_sessao_principal .conteiner_quantidade figure .botao_carrinho:hover{
+        background-color: rgb(255, 140, 0);
+        border-radius: 10px;
+        
+    }
+    
+    .conteiner_principal_e_carrinho{
+        display: flex;
+        gap: 20px;
+        flex-direction: column;
+        
+        
+    }
+    
+    #adicionar_carrinho{
+        width: 270px;
+        height: 460px;
+        border: #472e2e solid 1px;
+        border-radius: 20px;
+        background-color: white;
+        padding: 30px;
+        display: none;
+        flex-direction: column;
+        gap: 20px;
+        animation: slideDown 0.5s ease forwards;
+        
+    
+    }
+    
+    @keyframes slideDown {
+        from{
+            transform: translateX(-100%);
+            opacity: 0;
+        }
+        to{
+            transform: translateX(0);
+            opacity: 1;
+        }
+    }
+    
+    #adicionar_carrinho #carrinho_itens{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        background-color: #684d4d;
+        border-radius: 20px;
+        overflow: auto;
+        
+    }
+    
+    #adicionar_carrinho #carrinho_itens .carrinho_item {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding: 10px;
+    }
+    
+    #adicionar_carrinho #excluir_carrinho{
+        width: 50px;
+        font-size: 14px;
+        background-color: rgb(156, 51, 51);
+        color: aliceblue;
+        cursor: pointer;
+        border: none;
+        padding: 5px;
+        border-radius: 10px;
+        transition: all 0.3s ease;
+    }
+    
+    #adicionar_carrinho #excluir_carrinho:hover{
+        color: black;
+        background-color: rgb(255, 140, 0);
+    }
+    
+    #adicionar_carrinho h3{
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+    
+    #adicionar_carrinho img{
+        width: 50px;
+        border-radius: 20px;
+    }
+    
+    #adicionar_carrinho .conteiner_comprar_delete_carrinho{
+        display: flex;
+        gap: 20px;
+        justify-content: center;
+        align-items: end;
+        margin-top: auto;
+        
+    }
+    
+    #adicionar_carrinho .conteiner_comprar_delete_carrinho button{
+        width: 100px;
+        font-size: 14px;
+        background-color: rgb(66, 43, 26);
+        color: aliceblue;
+        cursor: pointer;
+        border: none;
+        padding: 5px;
+        border-radius: 10px;
+        transition: all 0.3s ease;
+        
+    }
+    
+    #adicionar_carrinho .conteiner_comprar_delete_carrinho button:hover{
+        color: black;
+        background-color: rgb(255, 140, 0);
+    }
+    
+    .sessao_principal .informacao_sessao_principal .div_comprar{
+        border: solid 1px black;
+        display: flex;
+        flex-direction: row;
+        width: 100px;
+        padding: 10px;
+        border-radius: 10px;
+        background-color: rgb(116, 80, 54);
+        justify-content: space-between;
+        align-items: center;
+        gap: 9px;
+    }
+    
+    .sessao_principal .informacao_sessao_principal .div_comprar button{
+        width: 80px;
+        background-color: transparent;
+    }
+    
+    .sessao_principal .informacao_sessao_principal button{
+        width: 100px;
+        font-size: 20px;
+        background-color: rgb(66, 43, 26);
+        color: aliceblue;
+        cursor: pointer;
+        border: none;
+        padding: 5px;
+        border-radius: 10px;
+        transition: all 0.3s ease;
+    }
+    
+    .sessao_principal .informacao_sessao_principal button:hover{
+     color: black;
+     background-color: rgb(255, 140, 0);
+    }
+    
+    hr{
+        height: 7px;
+        background-color: rgb(46, 28, 0);
+        border: none;
+        margin: 60px;
+    }
+    
+    h2{
+        font-size: 35px;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    
+    .conteiner_sessao{
+        display: flex;
+        gap: 30px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .conteiner_sessao .sessao_secundaria{
+        border: solid 2px black;
+        border-radius: 20px;
+        padding: 30px;
+        background-color: white;
+        text-align: center;
+        width: 230px;
+        
+    }
+    
+    .sessao_secundaria img{
+        width: 100%;
+        border-radius: 10px;
+        padding: 5px;
+    }
+    
+    .conteiner_sessao .sessao_secundaria .div_texto_secundario {
+        height: 100px;
+        overflow-y: auto;
+        border: 1px solid #472e2e;
+        border-radius: 15px;
+        
+    }
+    
+    .conteiner_sessao .sessao_secundaria p{
+        padding: 10px;
+        
+    }
+    
+    .conteiner_sessao .sessao_secundaria .preco{
+        font-size: 30px;
+    }
+    
+    .conteiner_sessao .sessao_secundaria button{
+        width: 100px;
+        font-size: 20px;
+        background-color: rgb(66, 43, 26);
+        color: aliceblue;
+        cursor: pointer;
+        border: none;
+        padding: 5px;
+        border-radius: 10px;
+        transition: all 0.3s ease;
+    }
+    
+    .conteiner_sessao .sessao_secundaria button:hover{
+        color: black;
+        background-color: rgb(255, 140, 0);   
+    }
+    
+    .onda_chocolate_2{
+        width: 100%;
+        height: 400px;
+        object-fit: cover;
+        position: relative;
+        z-index: 2;
+         
+    }
+    
+    footer{
+        background-color: rgb(177, 142, 98);
+        position: relative;
+        bottom: 200px;
+        padding: 20px;
+        padding-top: 160px;
+        
+    }
+
+    footer h1{
+        text-align: start;
+    }
+        
+    .conteiner_footer{
+        height: 0px;
+    }
+    
+    footer address{
+        text-align: end;
+    }
+    
+    footer p{
+        font-size: 23px;
+    }
+    
+    footer figure{
+        padding: 20px;
+        display: flex;
+        gap: 20px;
+    }
+    
+    footer figure .whatsapp{
+        width: 50px;
+        border-radius: 50%;
+        cursor: pointer;
+        transition: 0.3s ease;
+    
+    }
+    
+    footer figure .whatsapp:hover{
+        background-color: rgb(0, 255, 64);
+    }
+    
+    footer figure .facebook{
+        width: 50px;
+        border-radius: 50%;
+        cursor: pointer;
+        transition: 0.3s ease;
+    }
+    
+    footer figure .facebook:hover{
+        background-color: rgb(52, 106, 255);
+    }
+    
+    footer figure .instagram{
+        width: 50px;
+        border-radius: 50%;
+        cursor: pointer;
+        transition: 0.3s ease;
+    }
+    
+    footer figure .instagram:hover{
+        background-color: #ff7b00;
+    }
+
+}
+
+/* Dispositivos Médios (820px a 974px) */
+@media only screen and (min-width: 820px) and (max-width: 974px) {
+    
+    body{
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+    
+    .links_header{
+        gap: 20px;
+        margin-right: 50px;
+        
+    }
+    
+    
+    .logo{
+        width: 220px;
+    }
+    
+    main{
+        padding: 20px;
+    }
+    
+    .img_fundo_chocolate{
+        width: 100%;
+        height: 300px;
+        object-fit: cover;
+    }
+    
+    .onda_chocolate_1{
+        width: 100%;
+        height: 300px;
+        object-fit: cover;
+        position: relative;
+        bottom: 290px;
+        
+    }
+    
+    .figuras_home{
+        height: 290px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    h1{
+        font-size: 50px;
+        padding: 20px;
+        text-align: center;
+    }
+    
+    .sessao_principal{
+        display: flex;
+        gap: 20px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .img_bolo_comprar{
+        width: 270px;
+        border: solid 1px rgb(0, 0, 0);
+        border-radius: 20px;
+    }
+    
+    .informacao_sessao_principal{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        width: 300px;
+    }
+    
+    .informacao_sessao_principal h2{
+        font-size: 32px;
+    }
+    
+    .informacao_sessao_principal .preco{
+        font-size: 30px;
+    }
+    
+    .informacao_sessao_principal .conteiner_quantidade{
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+    
+    .informacao_sessao_principal .conteiner_quantidade figure .botao_carrinho{
+    width: 50px;
+    background: rgb(0, 0, 0);
+    
+    }
+    
+    .informacao_sessao_principal .conteiner_quantidade figure img{
+        width: 30px;
+        cursor: pointer;
+        transition: 0.3s ease;
+        margin-top: 4px;
+    }
+    
+    .informacao_sessao_principal .conteiner_quantidade figure .botao_carrinho:hover{
+        background-color: rgb(255, 140, 0);
+        border-radius: 10px;
+        
+    }
+    
+    .conteiner_principal_e_carrinho{
+        display: flex;
+        gap: 20px;
+        flex-direction: column;
+        
+        
+    }
+    
+    #adicionar_carrinho{
+        width: 270px;
+        height: 460px;
+        border: #472e2e solid 1px;
+        border-radius: 20px;
+        background-color: white;
+        padding: 30px;
+        display: none;
+        flex-direction: column;
+        gap: 20px;
+        animation: slideDown 0.5s ease forwards;
+        
+    
+    }
+    
+    @keyframes slideDown {
+        from{
+            transform: translateX(-100%);
+            opacity: 0;
+        }
+        to{
+            transform: translateX(0);
+            opacity: 1;
+        }
+    }
+    
+    #adicionar_carrinho #carrinho_itens{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        background-color: #684d4d;
+        border-radius: 20px;
+        overflow: auto;
+        
+    }
+    
+    #adicionar_carrinho #carrinho_itens .carrinho_item {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding: 10px;
+    }
+    
+    #adicionar_carrinho #excluir_carrinho{
+        width: 50px;
+        font-size: 14px;
+        background-color: rgb(156, 51, 51);
+        color: aliceblue;
+        cursor: pointer;
+        border: none;
+        padding: 5px;
+        border-radius: 10px;
+        transition: all 0.3s ease;
+    }
+    
+    #adicionar_carrinho #excluir_carrinho:hover{
+        color: black;
+        background-color: rgb(255, 140, 0);
+    }
+    
+    #adicionar_carrinho h3{
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+    
+    #adicionar_carrinho img{
+        width: 50px;
+        border-radius: 20px;
+    }
+    
+    #adicionar_carrinho .conteiner_comprar_delete_carrinho{
+        display: flex;
+        gap: 20px;
+        justify-content: center;
+        align-items: end;
+        margin-top: auto;
+        
+    }
+    
+    #adicionar_carrinho .conteiner_comprar_delete_carrinho button{
+        width: 100px;
+        font-size: 14px;
+        background-color: rgb(66, 43, 26);
+        color: aliceblue;
+        cursor: pointer;
+        border: none;
+        padding: 5px;
+        border-radius: 10px;
+        transition: all 0.3s ease;
+        
+    }
+    
+    #adicionar_carrinho .conteiner_comprar_delete_carrinho button:hover{
+        color: black;
+        background-color: rgb(255, 140, 0);
+    }
+    
+    .sessao_principal .informacao_sessao_principal .div_comprar{
+        border: solid 1px black;
+        display: flex;
+        flex-direction: row;
+        width: 100px;
+        padding: 10px;
+        border-radius: 10px;
+        background-color: rgb(116, 80, 54);
+        justify-content: space-between;
+        align-items: center;
+        gap: 9px;
+    }
+    
+    .sessao_principal .informacao_sessao_principal .div_comprar button{
+        width: 80px;
+        background-color: transparent;
+    }
+    
+    .sessao_principal .informacao_sessao_principal button{
+        width: 100px;
+        font-size: 20px;
+        background-color: rgb(66, 43, 26);
+        color: aliceblue;
+        cursor: pointer;
+        border: none;
+        padding: 5px;
+        border-radius: 10px;
+        transition: all 0.3s ease;
+    }
+    
+    .sessao_principal .informacao_sessao_principal button:hover{
+     color: black;
+     background-color: rgb(255, 140, 0);
+    }
+    
+    hr{
+        height: 7px;
+        background-color: rgb(46, 28, 0);
+        border: none;
+        margin: 60px;
+    }
+    
+    h2{
+        font-size: 35px;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    
+    .conteiner_sessao{
+        display: flex;
+        gap: 30px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .conteiner_sessao .sessao_secundaria{
+        border: solid 2px black;
+        border-radius: 20px;
+        padding: 30px;
+        background-color: white;
+        text-align: center;
+        width: 230px;
+        
+    }
+    
+    .sessao_secundaria img{
+        width: 100%;
+        border-radius: 10px;
+        padding: 5px;
+    }
+    
+    .conteiner_sessao .sessao_secundaria .div_texto_secundario {
+        height: 100px;
+        overflow-y: auto;
+        border: 1px solid #472e2e;
+        border-radius: 15px;
+        
+    }
+    
+    .conteiner_sessao .sessao_secundaria p{
+        padding: 10px;
+        
+    }
+    
+    .conteiner_sessao .sessao_secundaria .preco{
+        font-size: 30px;
+    }
+    
+    .conteiner_sessao .sessao_secundaria button{
+        width: 100px;
+        font-size: 20px;
+        background-color: rgb(66, 43, 26);
+        color: aliceblue;
+        cursor: pointer;
+        border: none;
+        padding: 5px;
+        border-radius: 10px;
+        transition: all 0.3s ease;
+    }
+    
+    .conteiner_sessao .sessao_secundaria button:hover{
+        color: black;
+        background-color: rgb(255, 140, 0);   
+    }
+    
+    .onda_chocolate_2{
+        width: 100%;
+        height: 400px;
+        object-fit: cover;
+        position: relative;
+        z-index: 2;
+         
+    }
+    
+    footer{
+        background-color: rgb(177, 142, 98);
+        position: relative;
+        bottom: 200px;
+        padding: 20px;
+        padding-top: 160px;
+        
+    }
+
+    footer h1{
+        text-align: start;
+    }
+        
+    .conteiner_footer{
+        height: 0px;
+    }
+    
+    footer address{
+        text-align: end;
+    }
+    
+    footer p{
+        font-size: 23px;
+    }
+    
+    footer figure{
+        padding: 20px;
+        display: flex;
+        gap: 20px;
+    }
+    
+    footer figure .whatsapp{
+        width: 50px;
+        border-radius: 50%;
+        cursor: pointer;
+        transition: 0.3s ease;
+    
+    }
+    
+    footer figure .whatsapp:hover{
+        background-color: rgb(0, 255, 64);
+    }
+    
+    footer figure .facebook{
+        width: 50px;
+        border-radius: 50%;
+        cursor: pointer;
+        transition: 0.3s ease;
+    }
+    
+    footer figure .facebook:hover{
+        background-color: rgb(52, 106, 255);
+    }
+    
+    footer figure .instagram{
+        width: 50px;
+        border-radius: 50%;
+        cursor: pointer;
+        transition: 0.3s ease;
+    }
+    
+    footer figure .instagram:hover{
+        background-color: #ff7b00;
+    }
+
+}
+
+/* Dispositivos Largos (975px a 1180px) */
+@media only screen and (min-width: 975px) and (max-width: 1180px) {
+    
+    body{
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+    
+    .links_header{
+        gap: 20px;
+        margin-right: 50px;
+        
+    }
+    
+    
+    .logo{
+        width: 220px;
+    }
+    
+    main{
+        padding: 20px;
+    }
+    
+    .img_fundo_chocolate{
+        width: 100%;
+        height: 300px;
+        object-fit: cover;
+    }
+    
+    .onda_chocolate_1{
+        width: 100%;
+        height: 300px;
+        object-fit: cover;
+        position: relative;
+        bottom: 290px;
+        
+    }
+    
+    .figuras_home{
+        height: 290px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    h1{
+        font-size: 50px;
+        padding: 20px;
+        text-align: center;
+    }
+    
+    .sessao_principal{
+        display: flex;
+        gap: 20px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .img_bolo_comprar{
+        width: 270px;
+        border: solid 1px rgb(0, 0, 0);
+        border-radius: 20px;
+    }
+    
+    .informacao_sessao_principal{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        width: 300px;
+    }
+    
+    .informacao_sessao_principal h2{
+        font-size: 32px;
+    }
+    
+    .informacao_sessao_principal .preco{
+        font-size: 30px;
+    }
+    
+    .informacao_sessao_principal .conteiner_quantidade{
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+    
+    .informacao_sessao_principal .conteiner_quantidade figure .botao_carrinho{
+    width: 50px;
+    background: rgb(0, 0, 0);
+    
+    }
+    
+    .informacao_sessao_principal .conteiner_quantidade figure img{
+        width: 30px;
+        cursor: pointer;
+        transition: 0.3s ease;
+        margin-top: 4px;
+    }
+    
+    .informacao_sessao_principal .conteiner_quantidade figure .botao_carrinho:hover{
+        background-color: rgb(255, 140, 0);
+        border-radius: 10px;
+        
+    }
+    
+    .conteiner_principal_e_carrinho{
+        display: flex;
+        gap: 20px;
+        flex-direction: row;
+        
+        
+    }
+    
+    #adicionar_carrinho{
+        width: 270px;
+        height: 460px;
+        border: #472e2e solid 1px;
+        border-radius: 20px;
+        background-color: white;
+        padding: 30px;
+        display: none;
+        flex-direction: column;
+        gap: 20px;
+        animation: slideDown 0.5s ease forwards;
+        
+    
+    }
+    
+    @keyframes slideDown {
+        from{
+            transform: translateX(100%);
+            opacity: 0;
+        }
+        to{
+            transform: translateX(0);
+            opacity: 1;
+        }
+    }
+    
+    #adicionar_carrinho #carrinho_itens{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        background-color: #684d4d;
+        border-radius: 20px;
+        overflow: auto;
+        
+    }
+    
+    #adicionar_carrinho #carrinho_itens .carrinho_item {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding: 10px;
+    }
+    
+    #adicionar_carrinho #excluir_carrinho{
+        width: 50px;
+        font-size: 14px;
+        background-color: rgb(156, 51, 51);
+        color: aliceblue;
+        cursor: pointer;
+        border: none;
+        padding: 5px;
+        border-radius: 10px;
+        transition: all 0.3s ease;
+    }
+    
+    #adicionar_carrinho #excluir_carrinho:hover{
+        color: black;
+        background-color: rgb(255, 140, 0);
+    }
+    
+    #adicionar_carrinho h3{
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+    
+    #adicionar_carrinho img{
+        width: 50px;
+        border-radius: 20px;
+    }
+    
+    #adicionar_carrinho .conteiner_comprar_delete_carrinho{
+        display: flex;
+        gap: 20px;
+        justify-content: center;
+        align-items: end;
+        margin-top: auto;
+        
+    }
+    
+    #adicionar_carrinho .conteiner_comprar_delete_carrinho button{
+        width: 100px;
+        font-size: 14px;
+        background-color: rgb(66, 43, 26);
+        color: aliceblue;
+        cursor: pointer;
+        border: none;
+        padding: 5px;
+        border-radius: 10px;
+        transition: all 0.3s ease;
+        
+    }
+    
+    #adicionar_carrinho .conteiner_comprar_delete_carrinho button:hover{
+        color: black;
+        background-color: rgb(255, 140, 0);
+    }
+    
+    .sessao_principal .informacao_sessao_principal .div_comprar{
+        border: solid 1px black;
+        display: flex;
+        flex-direction: row;
+        width: 100px;
+        padding: 10px;
+        border-radius: 10px;
+        background-color: rgb(116, 80, 54);
+        justify-content: space-between;
+        align-items: center;
+        gap: 9px;
+    }
+    
+    .sessao_principal .informacao_sessao_principal .div_comprar button{
+        width: 80px;
+        background-color: transparent;
+    }
+    
+    .sessao_principal .informacao_sessao_principal button{
+        width: 100px;
+        font-size: 20px;
+        background-color: rgb(66, 43, 26);
+        color: aliceblue;
+        cursor: pointer;
+        border: none;
+        padding: 5px;
+        border-radius: 10px;
+        transition: all 0.3s ease;
+    }
+    
+    .sessao_principal .informacao_sessao_principal button:hover{
+     color: black;
+     background-color: rgb(255, 140, 0);
+    }
+    
+    hr{
+        height: 7px;
+        background-color: rgb(46, 28, 0);
+        border: none;
+        margin: 60px;
+    }
+    
+    h2{
+        font-size: 35px;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    
+    .conteiner_sessao{
+        display: flex;
+        gap: 30px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .conteiner_sessao .sessao_secundaria{
+        border: solid 2px black;
+        border-radius: 20px;
+        padding: 30px;
+        background-color: white;
+        text-align: center;
+        width: 230px;
+        
+    }
+    
+    .sessao_secundaria img{
+        width: 100%;
+        border-radius: 10px;
+        padding: 5px;
+    }
+    
+    .conteiner_sessao .sessao_secundaria .div_texto_secundario {
+        height: 100px;
+        overflow-y: auto;
+        border: 1px solid #472e2e;
+        border-radius: 15px;
+        
+    }
+    
+    .conteiner_sessao .sessao_secundaria p{
+        padding: 10px;
+        
+    }
+    
+    .conteiner_sessao .sessao_secundaria .preco{
+        font-size: 30px;
+    }
+    
+    .conteiner_sessao .sessao_secundaria button{
+        width: 100px;
+        font-size: 20px;
+        background-color: rgb(66, 43, 26);
+        color: aliceblue;
+        cursor: pointer;
+        border: none;
+        padding: 5px;
+        border-radius: 10px;
+        transition: all 0.3s ease;
+    }
+    
+    .conteiner_sessao .sessao_secundaria button:hover{
+        color: black;
+        background-color: rgb(255, 140, 0);   
+    }
+    
+    .onda_chocolate_2{
+        width: 100%;
+        height: 400px;
+        object-fit: cover;
+        position: relative;
+        z-index: 2;
+         
+    }
+    
+    footer{
+        background-color: rgb(177, 142, 98);
+        position: relative;
+        bottom: 200px;
+        padding: 20px;
+        padding-top: 160px;
+        
+    }
+
+    footer h1{
+        text-align: start;
+    }
+        
+    .conteiner_footer{
+        height: 0px;
+    }
+    
+    footer address{
+        text-align: end;
+    }
+    
+    footer p{
+        font-size: 23px;
+    }
+    
+    footer figure{
+        padding: 20px;
+        display: flex;
+        gap: 20px;
+    }
+    
+    footer figure .whatsapp{
+        width: 50px;
+        border-radius: 50%;
+        cursor: pointer;
+        transition: 0.3s ease;
+    
+    }
+    
+    footer figure .whatsapp:hover{
+        background-color: rgb(0, 255, 64);
+    }
+    
+    footer figure .facebook{
+        width: 50px;
+        border-radius: 50%;
+        cursor: pointer;
+        transition: 0.3s ease;
+    }
+    
+    footer figure .facebook:hover{
+        background-color: rgb(52, 106, 255);
+    }
+    
+    footer figure .instagram{
+        width: 50px;
+        border-radius: 50%;
+        cursor: pointer;
+        transition: 0.3s ease;
+    }
+    
+    footer figure .instagram:hover{
+        background-color: #ff7b00;
+    }
+
+}
+
+/* Super Largos (1181px para cima) */
+@media only screen and (min-width: 1181px) and (max-width: 1470px) {
+    
+    body{
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+    
+    .links_header{
+        gap: 20px;
+        margin-right: 50px;
+        
+    }
+    
+    
+    .logo{
+        width: 220px;
+    }
+    
+    main{
+        padding: 20px;
+    }
+    
+    .img_fundo_chocolate{
+        width: 100%;
+        height: 300px;
+        object-fit: cover;
+    }
+    
+    .onda_chocolate_1{
+        width: 100%;
+        height: 300px;
+        object-fit: cover;
+        position: relative;
+        bottom: 290px;
+        
+    }
+    
+    .figuras_home{
+        height: 290px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    h1{
+        font-size: 50px;
+        padding: 20px;
+        text-align: center;
+    }
+    
+    .sessao_principal{
+        display: flex;
+        gap: 20px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .img_bolo_comprar{
+        width: 270px;
+        border: solid 1px rgb(0, 0, 0);
+        border-radius: 20px;
+    }
+    
+    .informacao_sessao_principal{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        width: 300px;
+    }
+    
+    .informacao_sessao_principal h2{
+        font-size: 32px;
+    }
+    
+    .informacao_sessao_principal .preco{
+        font-size: 30px;
+    }
+    
+    .informacao_sessao_principal .conteiner_quantidade{
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+    
+    .informacao_sessao_principal .conteiner_quantidade figure .botao_carrinho{
+    width: 50px;
+    background: rgb(0, 0, 0);
+    
+    }
+    
+    .informacao_sessao_principal .conteiner_quantidade figure img{
+        width: 30px;
+        cursor: pointer;
+        transition: 0.3s ease;
+        margin-top: 4px;
+    }
+    
+    .informacao_sessao_principal .conteiner_quantidade figure .botao_carrinho:hover{
+        background-color: rgb(255, 140, 0);
+        border-radius: 10px;
+        
+    }
+    
+    .conteiner_principal_e_carrinho{
+        display: flex;
+        gap: 20px;
+        flex-direction: row;
+        justify-content: center;
+        
+    }
+    
+    #adicionar_carrinho{
+        width: 270px;
+        height: 460px;
+        border: #472e2e solid 1px;
+        border-radius: 20px;
+        background-color: white;
+        padding: 30px;
+        display: none;
+        flex-direction: column;
+        gap: 20px;
+        animation: slideDown 0.5s ease forwards;
+        
+    
+    }
+    
+    @keyframes slideDown {
+        from{
+            transform: translateY(-100%);
+            opacity: 0;
+        }
+        to{
+            transform: translateY(0);
+            opacity: 1;
+        }
+    }
+    
+    #adicionar_carrinho #carrinho_itens{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        background-color: #684d4d;
+        border-radius: 20px;
+        overflow: auto;
+        
+    }
+    
+    #adicionar_carrinho #carrinho_itens .carrinho_item {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding: 10px;
+    }
+    
+    #adicionar_carrinho #excluir_carrinho{
+        width: 50px;
+        font-size: 14px;
+        background-color: rgb(156, 51, 51);
+        color: aliceblue;
+        cursor: pointer;
+        border: none;
+        padding: 5px;
+        border-radius: 10px;
+        transition: all 0.3s ease;
+    }
+    
+    #adicionar_carrinho #excluir_carrinho:hover{
+        color: black;
+        background-color: rgb(255, 140, 0);
+    }
+    
+    #adicionar_carrinho h3{
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+    
+    #adicionar_carrinho img{
+        width: 50px;
+        border-radius: 20px;
+    }
+    
+    #adicionar_carrinho .conteiner_comprar_delete_carrinho{
+        display: flex;
+        gap: 20px;
+        justify-content: center;
+        align-items: end;
+        margin-top: auto;
+        
+    }
+    
+    #adicionar_carrinho .conteiner_comprar_delete_carrinho button{
+        width: 100px;
+        font-size: 14px;
+        background-color: rgb(66, 43, 26);
+        color: aliceblue;
+        cursor: pointer;
+        border: none;
+        padding: 5px;
+        border-radius: 10px;
+        transition: all 0.3s ease;
+        
+    }
+    
+    #adicionar_carrinho .conteiner_comprar_delete_carrinho button:hover{
+        color: black;
+        background-color: rgb(255, 140, 0);
+    }
+    
+    .sessao_principal .informacao_sessao_principal .div_comprar{
+        border: solid 1px black;
+        display: flex;
+        flex-direction: row;
+        width: 100px;
+        padding: 10px;
+        border-radius: 10px;
+        background-color: rgb(116, 80, 54);
+        justify-content: space-between;
+        align-items: center;
+        gap: 9px;
+    }
+    
+    .sessao_principal .informacao_sessao_principal .div_comprar button{
+        width: 80px;
+        background-color: transparent;
+    }
+    
+    .sessao_principal .informacao_sessao_principal button{
+        width: 100px;
+        font-size: 20px;
+        background-color: rgb(66, 43, 26);
+        color: aliceblue;
+        cursor: pointer;
+        border: none;
+        padding: 5px;
+        border-radius: 10px;
+        transition: all 0.3s ease;
+    }
+    
+    .sessao_principal .informacao_sessao_principal button:hover{
+     color: black;
+     background-color: rgb(255, 140, 0);
+    }
+    
+    hr{
+        height: 7px;
+        background-color: rgb(46, 28, 0);
+        border: none;
+        margin: 60px;
+    }
+    
+    h2{
+        font-size: 35px;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    
+    .conteiner_sessao{
+        display: flex;
+        gap: 30px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .conteiner_sessao .sessao_secundaria{
+        border: solid 2px black;
+        border-radius: 20px;
+        padding: 30px;
+        background-color: white;
+        text-align: center;
+        width: 230px;
+        
+    }
+    
+    .sessao_secundaria img{
+        width: 100%;
+        border-radius: 10px;
+        padding: 5px;
+    }
+    
+    .conteiner_sessao .sessao_secundaria .div_texto_secundario {
+        height: 100px;
+        overflow-y: auto;
+        border: 1px solid #472e2e;
+        border-radius: 15px;
+        
+    }
+    
+    .conteiner_sessao .sessao_secundaria p{
+        padding: 10px;
+        
+    }
+    
+    .conteiner_sessao .sessao_secundaria .preco{
+        font-size: 30px;
+    }
+    
+    .conteiner_sessao .sessao_secundaria button{
+        width: 100px;
+        font-size: 20px;
+        background-color: rgb(66, 43, 26);
+        color: aliceblue;
+        cursor: pointer;
+        border: none;
+        padding: 5px;
+        border-radius: 10px;
+        transition: all 0.3s ease;
+    }
+    
+    .conteiner_sessao .sessao_secundaria button:hover{
+        color: black;
+        background-color: rgb(255, 140, 0);   
+    }
+    
+    .onda_chocolate_2{
+        width: 100%;
+        height: 400px;
+        object-fit: cover;
+        position: relative;
+        z-index: 2;
+         
+    }
+    
+    footer{
+        background-color: rgb(177, 142, 98);
+        position: relative;
+        bottom: 200px;
+        padding: 20px;
+        padding-top: 160px;
+        
+    }
+
+    footer h1{
+        text-align: start;
+    }
+        
+    .conteiner_footer{
+        height: 0px;
+    }
+    
+    footer address{
+        text-align: end;
+    }
+    
+    footer p{
+        font-size: 23px;
+    }
+    
+    footer figure{
+        padding: 20px;
+        display: flex;
+        gap: 20px;
+    }
+    
+    footer figure .whatsapp{
+        width: 50px;
+        border-radius: 50%;
+        cursor: pointer;
+        transition: 0.3s ease;
+    
+    }
+    
+    footer figure .whatsapp:hover{
+        background-color: rgb(0, 255, 64);
+    }
+    
+    footer figure .facebook{
+        width: 50px;
+        border-radius: 50%;
+        cursor: pointer;
+        transition: 0.3s ease;
+    }
+    
+    footer figure .facebook:hover{
+        background-color: rgb(52, 106, 255);
+    }
+    
+    footer figure .instagram{
+        width: 50px;
+        border-radius: 50%;
+        cursor: pointer;
+        transition: 0.3s ease;
+    }
+    
+    footer figure .instagram:hover{
+        background-color: #ff7b00;
+    }
+
+}

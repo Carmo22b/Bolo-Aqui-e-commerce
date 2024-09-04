@@ -1,0 +1,404 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    margin-left: 100px;
+    margin-right: 100px;
+    background-color: rgb(70, 53, 33);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+header{
+    background-color: rgb(177, 142, 98);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.links_header{
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
+    flex-grow: 1;
+    margin-right: 80px;
+    
+}
+
+.links_header a {
+    color: rgb(46, 28, 0);
+    text-decoration: none;
+    padding: 3px;
+    transition: 0.3s ease;
+    border-radius: 10px;
+}
+
+.links_header a:hover{
+    color: rgb(229, 255, 0);
+    text-decoration: underline;
+    background: rgb(70, 38, 16);
+    
+}
+
+.logo{
+    width: 250px;
+}
+
+main{
+    background-color: rgb(177, 142, 98);
+    padding: 60px;
+}
+
+.img_fundo_chocolate{
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+
+.onda_chocolate_1{
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    position: relative;
+    bottom: 320px;
+    
+}
+
+.figuras_home{
+    height: 480px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+h1{
+    font-size: 50px;
+    padding: 20px;
+}
+
+.sessao_principal{
+    display: flex;
+    gap: 40px;
+}
+
+.img_bolo_comprar{
+    width: 500px;
+    border: solid 1px rgb(0, 0, 0);
+    border-radius: 20px;
+}
+
+.informacao_sessao_principal{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 300px;
+}
+
+.informacao_sessao_principal h2{
+    font-size: 40px;
+}
+
+.informacao_sessao_principal .preco{
+    font-size: 30px;
+}
+
+.informacao_sessao_principal .conteiner_quantidade{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.informacao_sessao_principal .conteiner_quantidade figure .botao_carrinho{
+width: 50px;
+background: rgb(0, 0, 0);
+
+}
+
+.informacao_sessao_principal .conteiner_quantidade figure img{
+    width: 30px;
+    cursor: pointer;
+    transition: 0.3s ease;
+    margin-top: 4px;
+}
+
+.informacao_sessao_principal .conteiner_quantidade figure .botao_carrinho:hover{
+    background-color: rgb(255, 140, 0);
+    border-radius: 10px;
+    
+}
+
+.conteiner_principal_e_carrinho{
+    display: flex;
+    gap: 50px;
+}
+
+#adicionar_carrinho{
+    width: 320px;
+    height: 500px;
+    border: #472e2e solid 1px;
+    border-radius: 20px;
+    background-color: white;
+    padding: 30px;
+    display: none;
+    flex-direction: column;
+    gap: 20px;
+    animation: slideDown 0.5s ease forwards;
+
+}
+
+@keyframes slideDown {
+    from{
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    to{
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+#adicionar_carrinho #carrinho_itens{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background-color: #684d4d;
+    border-radius: 20px;
+    overflow: auto;
+    
+}
+
+#adicionar_carrinho #carrinho_itens .carrinho_item {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+}
+
+#adicionar_carrinho #excluir_carrinho{
+    width: 50px;
+    font-size: 14px;
+    background-color: rgb(156, 51, 51);
+    color: aliceblue;
+    cursor: pointer;
+    border: none;
+    padding: 5px;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+
+#adicionar_carrinho #excluir_carrinho:hover{
+    color: black;
+    background-color: rgb(255, 140, 0);
+}
+
+#adicionar_carrinho h3{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+#adicionar_carrinho img{
+    width: 50px;
+    border-radius: 20px;
+}
+
+#adicionar_carrinho .conteiner_comprar_delete_carrinho{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: end;
+    margin-top: auto;
+    
+}
+
+#adicionar_carrinho .conteiner_comprar_delete_carrinho button{
+    width: 100px;
+    font-size: 14px;
+    background-color: rgb(66, 43, 26);
+    color: aliceblue;
+    cursor: pointer;
+    border: none;
+    padding: 5px;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+    
+}
+
+#adicionar_carrinho .conteiner_comprar_delete_carrinho button:hover{
+    color: black;
+    background-color: rgb(255, 140, 0);
+}
+
+.sessao_principal .informacao_sessao_principal .div_comprar{
+    border: solid 1px black;
+    display: flex;
+    flex-direction: row;
+    width: 100px;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: rgb(116, 80, 54);
+    justify-content: space-between;
+    align-items: center;
+    gap: 9px;
+}
+
+.sessao_principal .informacao_sessao_principal .div_comprar button{
+    width: 80px;
+    background-color: transparent;
+}
+
+.sessao_principal .informacao_sessao_principal button{
+    width: 100px;
+    font-size: 20px;
+    background-color: rgb(66, 43, 26);
+    color: aliceblue;
+    cursor: pointer;
+    border: none;
+    padding: 5px;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+
+.sessao_principal .informacao_sessao_principal button:hover{
+ color: black;
+ background-color: rgb(255, 140, 0);
+}
+
+hr{
+    height: 7px;
+    background-color: rgb(46, 28, 0);
+    border: none;
+    margin: 60px;
+}
+
+h2{
+    font-size: 50px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.conteiner_sessao{
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.conteiner_sessao .sessao_secundaria{
+    border: solid 2px black;
+    border-radius: 20px;
+    padding: 30px;
+    background-color: white;
+    text-align: center;
+    width: 230px;
+    
+}
+
+.sessao_secundaria img{
+    width: 100%;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+.conteiner_sessao .sessao_secundaria .div_texto_secundario {
+    height: 100px;
+    overflow-y: auto;
+    border: 1px solid #472e2e;
+    
+    
+}
+
+.conteiner_sessao .sessao_secundaria p{
+    padding: 10px;
+    
+}
+
+.conteiner_sessao .sessao_secundaria .preco{
+    font-size: 30px;
+}
+
+.conteiner_sessao .sessao_secundaria button{
+    width: 100px;
+    font-size: 20px;
+    background-color: rgb(66, 43, 26);
+    color: aliceblue;
+    cursor: pointer;
+    border: none;
+    padding: 5px;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+
+.conteiner_sessao .sessao_secundaria button:hover{
+    color: black;
+    background-color: rgb(255, 140, 0);   
+}
+
+.onda_chocolate_2{
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    position: relative;
+    z-index: 2;
+     
+}
+
+footer{
+    background-color: rgb(177, 142, 98);
+    position: relative;
+    bottom: 400px;
+    padding: 60px;
+    padding-top: 160px;
+    
+}
+    
+.conteiner_footer{
+    height: 0px;
+}
+
+footer address{
+    text-align: end;
+}
+
+footer p{
+    font-size: 23px;
+}
+
+footer figure{
+    padding: 20px;
+    display: flex;
+    gap: 20px;
+}
+
+footer figure .whatsapp{
+    width: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.3s ease;
+
+}
+
+footer figure .whatsapp:hover{
+    background-color: rgb(0, 255, 64);
+}
+
+footer figure .facebook{
+    width: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+footer figure .facebook:hover{
+    background-color: rgb(52, 106, 255);
+}
+
+footer figure .instagram{
+    width: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+footer figure .instagram:hover{
+    background-color: #ff7b00;
+}
